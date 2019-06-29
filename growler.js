@@ -1,3 +1,6 @@
 const growler = new Vue({
-  el: '#growler'
+  el: '#growler',
+  data: {
+    appName: 'Growler'
+  }
 })
