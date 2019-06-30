@@ -4,7 +4,12 @@ const growler = new Vue({
     appName: 'Growler',
     query: '',
     searchIndex: 'beers',
-    selectedSearchIndex: 'beers'
+    selectedSearchIndex: 'beers',
+    beerList: [
+      'Beer 1',
+      'Beer 2',
+      'Beer 3'
+    ]
   },
   methods: {
     executeSearch: function () {
