@@ -5,5 +5,10 @@ const growler = new Vue({
     query: '',
     searchIndex: 'beers',
     selectedSearchIndex: 'beers'
+  },
+  methods: {
+    executeSearch: function () {
+      alert(`Searching for ${this.query}...`);
+    }
   }
 })
