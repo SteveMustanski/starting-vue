@@ -15,6 +15,29 @@
     <br />
     <br />
     <div>Searching for: {{ query }}</div>
+    <br />
+    <br />
+    <p>Example of radio button binding</p>
+    <label class="form-check-label">
+      <input type="radio" value="beers" v-model="searchIndex">
+      Beers
+    </label>
+    <label class="form-check-label">
+      <input type="radio" value="breweries" v-model="searchIndex">
+      Breweries
+    </label>
+    <p>Value of radio button is: {{searchIndex}}</p>
+    <br />
+    <p>Example of single dropdown</p>
+    <select v-model="selectedSearchIndex">
+      <option value="beers">Beers</option>
+      <option value="breweries">Breweries</option>
+      <option value="pubs">Pubs</option>
+      <option value="distilleries">Distilleries</option>
+    </select>
+    <p>The selected dropdown value is: {{selectedSearchIndex}}</p>
+
+
   </div>
   <script type="text/javascript" src="https://unpkg.com/vue"></script>
   <script type="text/javascript" src="./growler.js"></script>

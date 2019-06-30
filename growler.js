@@ -2,6 +2,8 @@ const growler = new Vue({
   el: '#growler',
   data: {
     appName: 'Growler',
-    query: ''
+    query: '',
+    searchIndex: 'beers',
+    selectedSearchIndex: 'beers'
   }
 })
